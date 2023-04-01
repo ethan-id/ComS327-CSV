@@ -11,7 +11,7 @@ CXXFLAGS = -Wall -Werror -ggdb -funroll-loops -DTERM=$(TERM)
 LDFLAGS = -lncurses
 
 BIN = csv
-OBJS = csv.o heap.o
+OBJS = csv.o heap.o parse.o
 
 all: $(BIN) etags
 

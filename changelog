@@ -1,1 +1,27 @@
 3/31/2023
+    5:40pm-7:26pm
+        Copied csv files from database
+            scp -r ehancock@pyrite.cs.iastate.edu:/share/cs327/pokedex/pokedex/data/csv /home/ehancock/cs327/Csv/files
+        Making parse.cpp file to do the parsing of the csv's instead of bulking up the main file anymore.
+        Wrote verifyFileName() to verify the supplied parameter is a valid option.
+    7:30pm-8:19pm
+        Got parseFile() to open my README.md file and print it out line by line to the terminal
+            Now need to make it look for the database and open the file the user asks for
+    8:19pm-8:34pm
+        parseFile() method now opens and outputs the .csv file from the /share/ directory line by line.
+            Now I need to write out the class/structs for each csv and parse the lines, build objects from the data, then output that instead.
+    9:50pm-10:15pm
+        Extracted logic from parseFile() into readFile() to prevent a bunch of duplicate code
+    10:15pm-10:42pm
+        Code is now reading the file line by line and splitting everything into std::string segments held in a vector that I will use to build the objects to print to terminal output. Buuuut I'll do that later cuz brain hurt.
+            Also already added a stats class for my future self. (you're welcome)
+4/1/23
+    12:10pm-1:33pm
+        Managed to build a stats objects out of all the lines from stats.csv and output them in a nicely formatted way.
+            Right now all of the members of the stats class are strings tho which isn't ideal but trying to make some of them ints gave me a lot of problems so this will do for now.
+        To-Do:
+            Write classes for other .csv files
+            Implement almost identical logic for all other data/class types
+    2:04pm-2:12pm
+        Added class for all other .csv files
+    2:13pm-

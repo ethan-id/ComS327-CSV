@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <ncurses.h>
 #include <iostream>
+#include "parse.h"
 extern "C" {
     #include "heap.h"
 }
@@ -1551,11 +1552,29 @@ int main(int argc, char *argv[]) {
 
     // If the user passed --numtrainers
     if(argv[1]) {
-        if (strcmp(argv[1], "--numtrainers") == 0) {
-            // Generate terrain with the number they passed
-            numTrainers = atoi(argv[2]) + 1;
+        // if (strcmp(argv[1], "--numtrainers") == 0) {
+        //     // Generate terrain with the number they passed
+        //     numTrainers = atoi(argv[2]) + 1;
+        // }
+        if (verifyFileName(argv[1])) {
+            parseFile(argv[1]);
+        } else {
+            printf("Invalid file name\n");
         }
     }
+
+    // do csv things
+    // do csv things
+    // do csv things
+    // do csv things
+    // do csv things
+    // do csv things
+    // do csv things
+    // do csv things
+
+    exit(0);
+
+    // exit before running game...
 
     initscr();
     keypad(stdscr, TRUE);		/* We get F1, F2 etc..		*/
