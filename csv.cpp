@@ -1550,7 +1550,7 @@ int main(int argc, char *argv[]) {
     int currWorldCol = 200;
     int numTrainers = 8; // Default number of trainers = 8
 
-    // If the user passed --numtrainers
+    // If the user passed a parameter
     if(argv[1]) {
         // if (strcmp(argv[1], "--numtrainers") == 0) {
         //     // Generate terrain with the number they passed
@@ -1563,18 +1563,9 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    // do csv things
-    // do csv things
-    // do csv things
-    // do csv things
-    // do csv things
-    // do csv things
-    // do csv things
-    // do csv things
-
+    // exit before running game...
     exit(0);
 
-    // exit before running game...
 
     initscr();
     keypad(stdscr, TRUE);		/* We get F1, F2 etc..		*/
