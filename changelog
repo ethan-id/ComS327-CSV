@@ -24,4 +24,17 @@
             Implement almost identical logic for all other data/class types
     2:04pm-2:12pm
         Added class for all other .csv files
-    2:13pm-
+    2:13pm-3:17pm
+        Implementing logic for pokemon.csv and type_names.csv
+        Csv files left are:
+            experiences, moves, pokemon_moves, pokemon_species, pokemon_stats, & pokemon_types
+    3:18pm-4:36pm
+        Struggling a bit to get pokemon_moves working, trying to make the class member not just all strings and also ints, but stoi() is throwing exceptions about invalid arguments for some reason
+    4:36pm-4:49pm
+        Got pokemon_moves and int members to work by adding a lot of try catch statements
+4/3/2023
+    3:45pm-3:56pm
+        Added some ternary conditionals into the outputting logic to makes moves.csv work
+    3:57pm-4:21pm
+        Added rest of logic to handle all the last csv files
+        All thats left is filling out the README and submitting.
